@@ -5,7 +5,8 @@ const dataSource = new ProductData("tents");
 
 function addProductToCart(product) {
   let cart = getLocalStorage("so-cart"); // Get the existing cart
-  if (!Array.isArray(cart)) { // Ensure cart is an array
+  if (!Array.isArray(cart)) {
+    // Ensure cart is an array
     cart = [];
   }
   cart.push(product); // Add the new product to the cart array
